@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+main{
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+}
+
+/* Left Bar Code*/
+
+.left{
+    position: fixed;
+    height: 100%;
+    width:13.6%;
+    background-color: black;
+}
+.left>img{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+margin: 3.5vw;
+}
+.left>ul li{
+    color: white;
+    font-size:1.1vw;
+    margin:0 0 1vw 3.8vw;
+    list-style: none;
+    display: inline-block;
+
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.left>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: white; /* Change the color as needed */
+    animation: underline 0.6s forwards;
+}
+@keyframes underline {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Right Bar Code*/
+
+.right{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.pgone{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.pgone>.content{
+    height: 24vw;
+    width: 37vw;
+    margin-left: 22.5vw;
+}
+
+.pgone>.content>h1{
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 6vw;
+}
+.pgone>.content>button{
+    padding: .7vw 1.2vw;
+    background-color: rgb(244, 244, 244);
+    color: black;
+    border-top: none;
+    border-right: none;
+    margin-top: 2vw;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+.pgone img{
+    height: 37vw;
+    margin-left: 2vw;
+}
+
+/* Page Two Code Styling */
+.pgtwo{
+    margin-top: 5px;
+    padding-left: 11vw;
+    height: 100%;
+    width: 100%;
+}
+.img{
+    height: 15vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.img>img{
+    height: 15vw;
+    width: 22vw;
+    object-fit: cover;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+}
+.video>.content{
+    width: 30vw;
+    padding-left: 3vw;
+}
+.video>.content h1{
+    text-transform: uppercase;
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: 900;
+}
+.video>.content p{
+    margin-top: 0.5vw;
+    font-size: 1vw;
+}
+.video>.content button{
+    background-color: #fff;
+    padding: 0.8vw 1.8vw;
+    background-color: black;
+    color: white;
+    border: .7px solid white;
+    box-shadow: 2px 2px black;
+    margin-top: 1.1vw;
+    cursor: pointer;
+}
+/* page three code */
+
+.pgthree{
+    height: 135%;
+    width: 100%;
+}
+.imgContent{
+    height: 23vw;
+    width: 100%;
+    background-image: url(imgContentgym.jpg);
+    object-fit: contain;
+    object-position: bottom;
+}
+.imgBlck{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.495);
+}
+.imgContent>.imgBlck> ul{
+    display: flex;
+    flex-direction: row;
+    padding-top: 8vw;
+    padding-left: 20vw;
+    color: white;
+    font-size: 5vw;
+    font-weight: 700;
+    list-style: none;
+}
+.imgContent>.imgBlck ul li{
+    margin-left: 5vw;
+}
+.imgContent>.imgBlck pre{
+    font-size: 1.1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pgthree>.ptTwo{
+    height: 61%;
+    width: 100%;
+    padding-top: 4vw;
+    padding-left: 5vw;
+    display: flex;
+}
+.pgthree .cont{
+    margin-left: 15vw;
+    height: 28vw;
+    width: 39vw;
+}
+.cont>h1{
+    font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.cont>p{
+    font-size: 1vw;
+    margin: 0.5vw 0vw;
+}
+.cont>button{
+    padding: 0.6vw 1.5vw;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+}
+.vol{
+    height: 20vw;
+    width: 31vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding-left: 2vw;
+}
+p { 
+    font-size: 20px; 
+} 
+
+.containerOne { 
+    background-color: rgba(0, 0, 0, 0.637); 
+    width: 30vw; 
+} 
+
+.containerOne>.skill { 
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+} 
+
+.containerOne>.html { 
+    width: 80%; 
+} 
+
+.containerTwo { 
+    background-color: rgba(0, 0, 0, 0.637); 
+    width: 30vw; 
+} 
+
+.containerTwo>.skill { 
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+} 
+
+.containerTwo>.html { 
+    width: 100%; 
+} 
+.containerThree { 
+    background-color: rgba(0, 0, 0, 0.637); 
+    width: 30vw; 
+} 
+
+.containerThree>.skill { 
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+} 
+
+.containerThree>.html { 
+    width: 70%; 
+} 
+
+/* page 4 coding */
+.pgfour{
+    height: 100%;
+    width: 100%;
+    padding-left: 13.5vw;
+    border: 2px solid black;
+
+}
+.PGone{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.PGone>.one{
+    height: 100%;
+    width: 50%;
+    background-image: url(1pg4.jpg);
+    object-fit: cover;
+    object-position: bottom;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+
+}
+.PGone>.one>p{
+    font-size: 1vw;
+    width: 27vw;
+    text-align: center;
+    padding: 0.5vw 0;
+}
+.PGone>.one>button{
+    padding: 0.6vw 1.5vw;
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: white;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+}
+.PGone>.two{
+    height: 100%;
+    width: 50%;
+    background-image: url(2pg4.jpg);
+    object-fit: contain;
+    object-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+
+}
+
+.PGone>.two>p{
+    font-size: 1vw;
+    width: 27vw;
+    text-align: center;
+    padding: 0.5vw 0;
+}
+.PGone>.two>button{
+    padding: 0.6vw 1.5vw;
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: white;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+}
+
+.PGtwo{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.PGtwo>.three{
+    height: 100%;
+    width: 50%;
+    background-image: url(3pg4.jpg);
+    object-fit: contain;
+    object-position: bottom;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+
+}
+
+.PGtwo>.three>p{
+    font-size: 1vw;
+    width: 27vw;
+    text-align: center;
+    padding: 0.5vw 0;
+}
+.PGtwo>.three>button{
+    padding: 0.6vw 1.5vw;
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: white;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+}
+.PGtwo>.four{
+    height: 100%;
+    width: 50%;
+    background-image: url(4pg4.jpg);
+    object-fit: cover;
+    object-position: bottom;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+
+}
+
+.PGtwo>.four>p{
+    font-size: 1vw;
+    width: 27vw;
+    text-align: center;
+    padding: 0.5vw 0;
+}
+.PGtwo>.four>button{
+    padding: 0.6vw 1.5vw;
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: rgb(212, 212, 212);
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+}
+
+/* page five code */
+.pgfive{
+    padding-top: 9vw;
+    padding-left: 21vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.txt {
+    width: 39vw;
+}
+.txt h1{
+    font-size: 4.5vw;
+    font-weight: 800;
+    line-height: 4vw;
+    padding-bottom: 1.5vw;
+}
+.txt p{
+    font-size: 1.1vw;
+}
+.txt h6{
+    padding: 0.2vw 0vw;
+    font-size: 1.11vw;
+}
+form{
+    margin-left: 3vw;
+}
+ form>.NE{
+    padding: 0.8vw 1vw;
+}
+
+form>#subject{
+    margin: 0.3vw 0vw;
+    padding: 0.8vw 1vw;
+    width: 30.3vw;
+    display: inline-block;
+}
+form button{
+    padding: 1vw 1.5vw;
+    background-color: #f1f1f1;
+    color: black;
+    border-top: white;
+    border-right: white;
+    margin-left: 15.5vw;
+    cursor: pointer;
+    font-weight: bold;
+}
